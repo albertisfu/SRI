@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+
+{% block head %}
+	<script type="text/javascript" src="/js/jquery-2.0.3.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block content %}
+
+<div id="wrap">
+	<div id="title">
+<div class="buap"></div>
+<div class="logo"></div>
+<div class="fce"></div>
+	</div>
+	<div class="visor">
+
+	<div id="digitos">
+{%  for numero in digitos %}
+<li>{{numero}}</li>
+{%  endfor %}
+	</div>
+
+</div>
+
+<div id="estacion">
+<div id="digitos2"></div>
+<div id="digitos2"></div>
+<div id="digitos1" class="iluv"></div>
+<div id="digitos2"></div>
+<div id="digitos2"></div>
+
+</div>
+</div>
+
+{% endblock %}
